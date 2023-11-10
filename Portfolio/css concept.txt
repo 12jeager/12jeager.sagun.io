@@ -1,0 +1,36 @@
+CSS Syntax:
+
+ElementSelector
+{
+Property Name: Property Value;
+}
+
+[inline > internal > external]
+
+
+Three ways we can specify a element selector:
+1. Tag name   : p{color:blue;}
+2. class value: .c1{color:rgb(15,20,0);}     }
+3. Id value     #id1{color:#00ffbb;}   }
+
+
+
+inline CSS:
+<p style="color:red;"> ... </p>
+
+
+internal css:
+<head>
+  <style type="text/css">
+    //code here
+  </style>
+</head>
+
+
+External CSS:
+<head>
+<link rel="stylesheet" type="text/css" 
+     href="myStyle.css" />
+</head>
+
+

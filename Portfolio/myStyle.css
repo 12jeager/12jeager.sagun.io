@@ -1,0 +1,73 @@
+h1
+{
+	text-align: center;
+	font-size: 24px;
+	text-shadow: 4px 4px 5px red;
+}
+
+p
+{
+	border: 2px solid blue;
+	background-color:black;
+}
+
+/* Styles for the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Styles for the navbar */
+.navbar {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:hover {
+  color: #ff6f61;
+}
+
+/* Styles for the content */
+.content {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.content p {
+  color: #555;
+  font-size: 18px;
+}
+
+.content #id1 {
+  font-family: 'Arial', sans-serif;
+  color: red;
+}
+
+
+marquee {
+  color: #ff6f61;
+}
+
+
+.inline-color {
+  color: blue;
+}
