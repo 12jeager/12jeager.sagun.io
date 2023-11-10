@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagun- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: whitesmoke;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(188, 188, 188);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: solid;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(149, 149, 241);
+            font-size: 1.04rem;
+        }
+
+        #projects{
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+            appearance: none;
+            width: 90px;
+        }
+
+        #contact{
+            color: white;
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            outline: none;
+            appearance: none;
+            width: 90px;
+        }
+
+        .left {
+            font-size: 2.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 2px solid purple;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            height: 40px;
+            width: 150px;
+        }
+
+        #btns{
+            margin: 10px 0;
+            width: 80%;
+        }
+
+
+
+        .rightSection img {
+            width: 100%;
+
+        }
+
+        .purple {
+            color: rgb(175, 118, 229);
+        }
+
+        .text-gray {
+            color: rgb(84, 83, 83);
+        }
+
+        #element {
+            color: rgb(175, 118, 229);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: black;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: black;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -1px;
+            right: -9px;
+            width: 150px;
+            font-family: system-ui;
+        }
+
+        .vertical-title2 {
+            position: relative;
+            top: 21px;
+            right: -9px;
+            width: 150px;
+            font-family: system-ui;
+        }
+
+        .footer {
+            background-color: rgb(220, 220, 220);
+            height: 233px;
+            display: flex;
+            padding: 23px 122px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sagun's Portfolio</div>
+            </div>
+            <div class="right"> </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li> 
+                    <select id = "projects" onChange = "window.location.href = this.value; this.value = 'My Projects'">
+                        <option disabled selected> My Projects </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Animated Car/ani_car.html"> Animated Car </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Calculator/calculator.html"> Calculator </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "cheatsheet_template/cheat_temp.html"> Cheatsheet Template </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Clock/clock.html"> clock </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Email Validator/e_valid.html"> Email Validator </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Password Manager/p_man.html"> Password Manager </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Snake Game/snake.html"> Snake Game </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "Spotify-Clone/spotify.html"> Spotify(clone) </option>
+                        <option style = "color : black; font-size : 1rem; text-align : start;" value = "tic tac toe/tic.html"> Tic Tac Toe Game </option>
+                    </select> 
+                </li>
+                <li>
+                    <select name="" id="contact" onchange="alert(value); this.value='Contact'">
+                        <option disabled selected>Contact</option>
+                        <option style="color : black; font-size : 1rem; text-align : start;" value="8653051614">phone</option>
+                        <option style="color : black; font-size : 1rem; text-align : start;" value="sagunvb01@gmail.com">email</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sagun</span>
+
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div>
+                <button class="btn"> Download Resume</button>
+                <button class="btn"> Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="profile.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">what I have learnt so far</span>
+            <h1>Academic Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="graduation.webp" alt="">
+                    <div class="vertical-title">
+                        Learnt C, Java, Python, SQL & Web Development in University.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title2">
+                        PLz hire me as a fresher, So I can gain some
+                        Experience.
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>SM's Portfolio 2023</h3>
+            </div>
+            <div class="second">
+
+            </div>
+            <div class="third">
+
+            </div>
+            <div class="fourth">
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['CS Student', 'Gamer', 'Astronomer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
